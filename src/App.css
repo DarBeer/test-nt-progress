@@ -1,0 +1,80 @@
+.wrapper {
+  width: 100%;
+  max-width: 32rem;
+  border: 1px solid #ced4da;
+  border-radius: .375rem;
+  margin: 3rem auto;
+}
+
+.tabs-link,
+h3 {
+  color: #454547!important;
+}
+
+div[role="tabpanel"] {
+  min-height: 17.375rem;
+}
+h3.history__empty {
+  text-align: center;
+  line-height: 17.375rem;
+  margin: 0;
+}
+
+.trading__clock {
+  margin: 2rem 0;
+  text-align: center;
+  color: #454547;
+}
+
+.trading__select {
+  max-width: 12rem;
+  width: 100%;
+  margin: 0 auto;
+  color: #454547;
+}
+
+.trading__panel {
+  cursor: pointer;
+  margin: 2rem auto;
+}
+
+td.table-item__side__buy,
+td.table-item__side__sell {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.trading-modal {
+  max-width: 24rem!important;
+}
+
+h3.trading-modal__title,
+h3.trading-modal__title > span {
+  text-transform: uppercase;
+  margin: 1.5rem 0;
+}
+
+.trading__panel.sell h3,
+.trading__panel.sell h4,
+td.table-item__side__sell,
+h3.trading-modal__title > span.sell{
+  color: #ff0000;
+}
+.trading__panel.buy h3,
+.trading__panel.buy h4,
+td.table-item__side__buy,
+h3.trading-modal__title > span.buy  {
+  color: #1ab313;
+}
+.trading__panel h3,
+.trading__panel h4 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (max-width: 544px) {
+  .wrapper {
+    max-width: calc(100vw - 2rem);
+    margin: 3rem 1rem;
+  }
+}
